@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator{
+    background: #2c3e50;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    max-width: 100%;
+}
+
+.display{
+    background: #34495e;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.display-text{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #ecf0f1;
+    word-break: break-all;
+    line-height: 1;
+}
+
+/* Grille de boutons */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn{
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.btn.number{
+    background: #ecf0f1;
+    color: #2c3e50
+}
+
+.btn.number:hover{
+    background: #d5dbdb;
+    transform: translateY(-2px);
+}
+
+.btn.operation{
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn.operation:hover{
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* butons de fonctions */
+.btn.function{
+    background: #95a5a6;
+    color: #fff;
+}
+
+.btn.function:hover{
+    background: #7f8c8d;
+    transform: translateY(-2px);
+}
+
+.btn.equals{
+    background: #27ae60;
+    color: #fff;
+    grid-column: span 1;
+}
+
+.btn.equals:hover{
+    background: #229954;
+    transform: translateY(-2px);
+}
+
+.btn:active{
+    transform: translateY(0);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 480px){
+    .calculator{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .display-text{
+        font-size: 2rem;
+    }
+
+    .btn{
+        min-height: 50px;
+        font-size: 1rem;
+    }
+
+    .buttons{
+        gap: 10px;
+    }
+}
+
+/* Animation d'apparition */
+.calculator{
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn:focus{
+    outline: 3px solid #3498db;
+    outline-offset: 2px;
+}
