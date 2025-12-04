@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Mawete Lusala Yann, développeur de Logiciel. Découvrez mes compétences, projets et contactez-moi pour collaborer.">
+        <meta property="og:title" content="Portfolio de Mawete Lusala Yann">
+        <meta property="og:description" content="Développeur de logiciel passionné, découvrez mon parcours et mes projets.">
+        <meta property="og:image" content="img/Yann.png">
+        <meta property="og:url" content="https://mon-site.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>  
+
+        <!-- Section À propos de moi -->
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+
+            <div class="profile">
+                <picture>
+                    <source srcset="img/Yann.webp" type="image/webp">
+                    <source srcset="img/Yann.png" type="image/png">
+                    <img src="img/Yann.png" alt="Une photo de moi avec un t-shirt noir" class="profile-pic" loading="lazy">
+                </picture>
+                <h3>Mawete Lusala Jann</h3>
+                <p>Développeur de Logiciel</p>
+            </div>
+
+            <h3>Mon Parcours et mes compétences</h3>
+            <ul>
+                <li>Unversité de Bohai (Bohai University)
+                    <ul>
+                        <li>Bachelor en Génie Logiciel</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <ul>Mes compétences:
+                <ul>
+                    <li>Langages de programmation:
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Php</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </li>
+                    <li>Outils et technologies:
+                        <ul>
+                            <li>Figma</li>
+                            <li>Lunacy</li>
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                        </ul>
+                    </li>
+                    <li>Langues Parlées:
+                        <ul>
+                            <li>Francais</li>
+                            <li>Anglais</li>
+                            <li>Mandarin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+        <!-- Section Projets-->
+
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-container">
+
+                <div id="projet-modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>E-comerce</h3>
+                        <p>Ce projet e-commerce permet aux utilisateurs de parcourir un catalogue de produits divers, d'ajouter des articles à leur panier et de finaliser leurs achats via un processus de paiement sécurisé. Avec une interface intuitive, il facilite la recherche de produits et propose des filtres avancés pour affiner les résultats. Les utilisateurs peuvent aussi bénéficier de recommandations personnalisées et suivre leurs commandes jusqu'à la livraison.</p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet1">
+                    <picture>
+                        <source srcset="img/Tacos tray.webp" type="image/webp">
+                        <source srcset="img/Tacos tray.jpg" type="image/jpeg">
+                        <img src="img/Tacos tray.jpg" alt="Mon projet E-commerce">
+                    </picture>
+                    <p>Projet 1</p>
+                </div>
+
+                <div id="projet-modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Gestionnaire de tâches</h3>
+                        <p>Ce gestionnaire de tâches aide les utilisateurs à organiser et suivre leurs projets en créant des tâches avec des échéances, des priorités et des statuts. Grâce à des fonctionnalités de collaboration, il permet aux équipes de partager des informations, de commenter les tâches et de suivre la progression globale. La visualisation sous forme de liste, tableau ou calendrier améliore la gestion du temps et la productivité.</p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet2">
+                    <picture>
+                        <source srcset="img/Gestionaire.webp" type="image/webp">
+                        <source srcset="img/Gestionaire.png" type="image/png">
+                        <img src="img/Gestionaire.png" alt="Mon projet de Gestion de tâches">
+                    </picture>
+                    <p>Projet 2</p>
+                </div>
+    
+            </div>
+        </section> 
+
+        <!-- Section Contact-->
+
+        <section id="contact">
+
+            <h2>Contactez-moi</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nom">
+                <input type="email" id="email" placeholder="Email">
+                <textarea id="message" placeholder="Votre message ici"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section> 
+
+        <!-- Footer-->
+        <footer>
+            <p>Suivez-moi sur :</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+            <p>&copy; 2024 Lusala yann</p>
+        </footer>
+
+       <script src="style.js"></script>
+    </body>
+</html>
+

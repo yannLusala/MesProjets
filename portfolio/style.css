@@ -1,0 +1,336 @@
+
+/* Couleurs de base et police */
+
+body{
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête (header) */
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header > h1{
+    font-size: 2em;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #FFD700;
+    transition: color 0.3s;
+}
+
+/* Section À propos */
+
+#about{
+    background-image: url("img/about_BG3.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#about h3{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+}
+
+.profile h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #FFD700;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+}
+
+.profile p{
+    font-size: 1.2em;
+    color: #f9f9f9;
+    margin: 5px 0 15px;
+}
+
+#about ul{
+    text-align: left;
+    margin: 10px auto;
+    padding: 0;
+    max-width: 600px;
+    list-style-type: none;
+}
+
+#about ul li{
+    font-size: 1em;
+    color: #fff;
+    margin: 5px 0;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#about ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Section Projets */
+
+#projects{
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projet{
+    width: 45%;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.projet img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* section contact */
+
+#contact{
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2{
+    text-align: center;
+}
+
+form input, form textarea, form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+form textarea{
+    resize: none;
+}
+
+form button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #FFD700;
+    transition: background-color 0.9s;
+}
+
+/* Footer */
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p, footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a{
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/*style de la modale */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid  #888;
+    width: calc(100% - 20%);  /* Largeur de la modale */
+    max-width: 600px;
+}
+
+.close{
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Media Query Mobile (écrans très petits comme les téléphones */
+
+@media (max-width: 600px){
+
+    body{
+        font-size: 14px; /* Petite taille de police pour les mobiles */
+    }
+
+    #about, #projects, #contact{
+        padding: 20px;
+    }
+
+    /* Mettre les projets en une colonne */
+    .projects-container{
+        flex-direction: column;
+    }
+
+    .projet{
+        width: 100%;
+    }
+
+    /* Centrer les titres des sections "À propos, Projects, Contact" */
+    
+    #about h2, #projects h2, #contact h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Tablette (écrans moyens) */
+
+@media (max-width: 900px){
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projet{
+        width: 80%; /* Réduit la taille des projets pour mieux s'adapter */
+        margin-bottom: 20px;
+    }
+
+    .profile-pic{
+        width: 120px; /*Rdéuit la taille de la photo sur les tablettes */
+        height: 120px;
+    }
+}
+
+/* Ordinateur de bureau (écrans larges) */
+
+@media (min-width: 901px){
+
+    .projet{
+        width: 45%; /* Deux projets à cote */
+    }
+}
