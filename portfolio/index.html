@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Mawete Lusala Yann, développeur de Logiciel. Découvrez mes compétences, projets et contactez-moi pour collaborer.">
+        <meta property="og:title" content="Portfolio de Mawete Lusala Yann">
+        <meta property="og:description" content="Développeur de logiciel passionné, découvrez mon parcours et mes projets.">
+        <meta property="og:image" content="img/Yann.png">
+        <meta property="og:url" content="https://mon-site.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>  
+
+        <!-- Section À propos de moi -->
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+
+            <div class="profile">
+                <picture>
+                    <source srcset="img/Yann.webp" type="image/webp">
+                    <source srcset="img/Yann.png" type="image/png">
+                    <img src="img/Yann.png" alt="Une photo de moi avec un t-shirt noir" class="profile-pic" loading="lazy">
+                </picture>
+                <h3>Mawete Lusala Jann</h3>
+                <p>Développeur de Logiciel</p>
+            </div>
+
+            <h3>Mon Parcours et mes compétences</h3>
+            <ul>
+                <li>Unversité de Bohai (Bohai University)
+                    <ul>
+                        <li>Bachelor en Génie Logiciel</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <ul>Mes compétences:
+                <ul>
+                    <li>Langages de programmation:
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Php</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </li>
+                    <li>Outils et technologies:
+                        <ul>
+                            <li>Figma</li>
+                            <li>Lunacy</li>
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                        </ul>
+                    </li>
+                    <li>Langues Parlées:
+                        <ul>
+                            <li>Francais</li>
+                            <li>Anglais</li>
+                            <li>Mandarin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+        <!-- Section Projets-->
+
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-container">
+
+                <div id="projet-modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Calculatrice</h3>
+                        <p>Une calculatrice web interactive permettant d’effectuer les opérations arithmétiques de base (addition, soustraction, multiplication, division).
+                        Le projet met l'accent sur:
+                        <li>La manipulation du DOM pour gérer l'affichage en temps réel</li>
+                        <li>La gestion des événements JavaScript (click & clavier)</li>
+                        <li>Un design simple et responsive réalisé en CSS</li>
+                        <li>Une structure de code claire (séparation HTML / CSS / JS)</li>
+                        <br>
+                        Objectif du projet : renforcer ma logique JavaScript et ma maîtrise des interactions utilisateur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet1">
+                    <picture>
+                        <img src="img/calculatrice.png" alt="Calculatrice — HTML, CSS, JavaScript">
+                    </picture>
+                    <p>Projet 1</p>
+                </div>
+
+                <div id="projet-modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Application Météo</h3>
+                        <p>
+                            <b>Une application météo connectée à une API pour afficher :</b>
+                            <li>La température en temps réel</li>
+                            <li>L’humidité, le vent, et l’état du ciel</li>
+                            <li>Une icône dynamique selon les conditions météo</li>
+                            <li>Une gestion d’erreur (ville introuvable, API non accessible)</li>
+                            <b>Fonctionnalités :</b>
+                            <li>Recherche par nom de ville</li>
+                            <li>Interface simple et moderne</li>
+                            <li>Données tirées d’une API externe (OpenWeatherMap)</li>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet2">
+                    <picture>
+                        <img src="img/meteo.png" alt="Application Météo — HTML, CSS, JavaScript">
+                    </picture>
+                    <p>Projet 2</p>
+                </div>
+
+                <div id="projet-modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>ToDo List</h3>
+                        <p>
+                            <b>Une application de gestion de tâches intuitive, avec :</b>
+                            <li>Ajout, suppression et modification de tâches</li>
+                            <li>Marquage des tâches comme terminées</li>
+                            <li>Interface claire et minimaliste</li>
+                            <b>Points techniques :</b>
+                            <li>Travail sur les structures de données JS</li>
+                            <li>Manipulation avancée du DOM</li>
+                            <li>Utilisation du localStorage pour simuler une petite base de données interne</li>
+                            <br>
+                            Objectif : démontrer la création d'une mini-application complète, dynamique et persistante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet3">
+                    <picture>
+                        <img src="img/todoList.png" alt="ToDo List — HTML, CSS, JavaScript">
+                    </picture>
+                    <p>Projet 3</p>
+                </div>
+
+                <div id="projet-modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Gestion d'utilisateurs</h3>
+                        <p>
+                            <b>Une mini-application complète permettant de :</b>
+                            <li>Ajouter un utilisateur</li>
+                            <li>Modifier ses informations</li>
+                            <li>Supprimer un utilisateur</li>
+                            <li>Afficher la liste complète (CRUD)</li>
+                            <b>Architecture :</b>
+                            <li>Structure MVC personnalisée</li>
+                            <li>Classe Database sécurisée (connexion avec PDO + gestion des erreurs)</li>
+                            <li>Requêtes préparées pour éviter les injections SQL</li>
+                            <li>Organisation professionnelle des fichiers (Model / View / Controller)</li>
+                            Objectif : maîtriser PHP moderne (POO + PDO), comprendre l’architecture MVC et interagir avec une base MySQL de manière sécurisée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projet" id="projet4">
+                    <picture>
+                        <img src="img/gestionUtilisateurs.png" alt="Gestion d’utilisateurs — PHP, POO, PDO, MySQL (MVC)">
+                    </picture>
+                    <p>Projet 4</p>
+                </div>
+    
+            </div>
+        </section> 
+
+        <!-- Section Contact-->
+
+        <section id="contact">
+
+            <h2>Contactez-moi</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nom">
+                <input type="email" id="email" placeholder="Email">
+                <textarea id="message" placeholder="Votre message ici"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section> 
+
+        <!-- Footer-->
+        <footer>
+            <p>Suivez-moi sur :</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+            <p>&copy; 2024 Lusala yann</p>
+        </footer>
+
+       <script src="style.js"></script>
+    </body>
+</html>
+
