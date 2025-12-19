@@ -1,44 +1,34 @@
-# 🌦️ Application Météo (Open-Meteo, sans clé API)
+# Application Météo
 
-Une application simple et responsive pour rechercher la météo d'une ville, avec géocodage et prévisions sur 5 jours. Construite avec HTML, CSS et JavaScript (modules ES6).
+##  Description
+Cette application météo permet à l’utilisateur de consulter en temps réel les conditions météorologiques d’une ville de son choix.  
+Elle consomme une API météo externe (OpenWeatherMap) et affiche des informations essentielles comme la température, l’humidité et les conditions climatiques.
 
-## ✨ Fonctionnalités
-- 🔎 Recherche de ville (géocodage Open‑Meteo)
-- ☁️ Météo actuelle (température, vent)
-- 📅 Prévision 5 jours (max/min + icône)
-- ⚠️ Gestion d'erreurs (ville introuvable, réseau)
-- 📱 UI responsive
+## 🎯 Objectifs du projet
+- Manipuler le DOM en JavaScript
+- Comprendre le fonctionnement des API REST
+- Gérer des requêtes asynchrones (fetch)
+- Améliorer l’expérience utilisateur avec une interface simple et claire
 
-## 🚀 Démarrage
-1. Ouvrez `index.html` dans un navigateur moderne
-2. Tapez une ville (ex: "Paris") et validez
+## 🛠️ Technologies utilisées
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- API météo (OpenWeatherMap)
 
-> Aucune clé API requise. Les données proviennent de `open-meteo.com`.
+## ⚙️ Fonctionnalités
+- Recherche météo par nom de ville
+- Affichage de la température actuelle
+- Affichage des conditions climatiques
+- Gestion des erreurs (ville introuvable)
 
-## 🗂️ Structure
-```
-Projets/Projet-3-MeteoApp/
-├── index.html
-├── css/
-│   └── style.css
-└── js/
-    ├── app.js         # Logique d'application (événements, flux)
-    ├── api.js         # Appels API (géocodage + météo)
-    └── ui.js          # Rendu UI (status, météo, prévisions)
-```
+## 🚀 Lancer le projet
+1. Cloner le dépôt
+2. Ouvrir le fichier `index.html` dans un navigateur
+3. Entrer le nom d’une ville
 
-## 🧠 Concepts pédagogiques
-- Découpage en modules : `app` (contrôle), `api` (données), `ui` (affichage)
-- Asynchrone avec `async/await` et `try/catch`
-- Séparation des responsabilités
-- Utilisation de `URLSearchParams`, `fetch`, et `dataset`
-
-## 🔧 Personnalisation & idées d'amélioration
-- 🌍 Choix d'unités (°C/°F)
-- 📌 Géolocalisation (position actuelle)
-- 🕒 Détails horaires (hourly)
-- 🌈 Thèmes clair/sombre
-- 💾 Historique des recherches
-
----
+## Compétences mises en pratique
+- Appels API REST
+- JavaScript asynchrone
+- Manipulation du DOM
 
